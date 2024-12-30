@@ -16,7 +16,7 @@ def getCoinNames():
 
 #####Function to get orderbook vol up to daily extremes##############
 def getOrderBookVol(pair):
-  api = initPoloConnection()
+  api = initPoloConnection(G5AYenZbJfjVPujAjMyJG8U2/YBkGpMOWU3TWiD+nzk=)
   orderBook = api.returnOrderBook(pair, depth=10000000)
   bids, asks = [orderBook["bids"], orderBook["asks"]]
   price = (float(bids[0][0]) + float(asks[0][0])) / 2
