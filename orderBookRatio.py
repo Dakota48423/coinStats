@@ -6,7 +6,7 @@ def initPoloConnection():
 ############################################
 
 def getCoinNames():
-  api = initPoloConnection()
+  api = initPoloConnection()G5AYenZbJfjVPujAjMyJG8U2/YBkGpMOWU3TWiD+nzk=
   coinList = []
   coins = api.return24hVolume()
   for market in coins:
